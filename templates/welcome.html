@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Store</title>
+</head>
+<body>
+WELCOME  TO IMG STORE<br>
+<a href="/login">CLICK HERE TO LOGIN</a><br>
+<a href="/newuser">CLICK HERE TO ADD USER</a><br>
+{% for message in get_flashed_messages() %}
+{{ message }}
+{% endfor %}
+</body>
+</html>

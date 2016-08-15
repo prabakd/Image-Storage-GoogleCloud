@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/upload">upload a pic</a><br>
+<a href="/view">View your pics</a><br>
+<a href="/viewall">View all users pics</a><br>
+<a href="/logout">Logout</a><br>
+    {% for message in get_flashed_messages() %}
+    {{ message }}
+    {% endfor %}
+</body>
+</html>

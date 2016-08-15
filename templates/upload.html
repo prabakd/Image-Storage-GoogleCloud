@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Image Store</title>
+</head>
+<body>
+<h1>In Upload File</h1>
+	<form action="/uploadimage"  method="POST" enctype="multipart/form-data" >
+    <label>Select the file to Upload</label>
+	<input type="file"  name="image"/><br><br>
+	<!--<label>Enter File Description</label>
+	<input type= "textbox" placeholder="optional" name =desc maxlength="250" value="1">-->
+    <input href="/uploadimage"  type="submit" name="Upload">
+</form>
+    {% for message in get_flashed_messages() %}
+    {{ message }}
+    {% endfor %}
+</body></html>
